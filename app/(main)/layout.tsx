@@ -5,7 +5,6 @@ import { useConvexAuth } from "convex/react";
 import { redirect } from "next/navigation";
 import Navigation from "./_components/navigation";
 import SearchCommand from "@/components/search-command";
-import SettingModal from "@/components/modals/settings-modal";
 import ModalProvider from "@/components/providers/modal-provider";
 
 function MainLayout({ children }: { children: React.ReactNode }) {

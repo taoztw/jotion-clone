@@ -1,18 +1,10 @@
 "use client";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import React, { useEffect } from "react";
+import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
+import React from "react";
 import { useSettings } from "@/hooks/use-settings";
 import { Label } from "@/components/ui/label";
-import { useSearch } from "@/hooks/use-search";
+
 import { ModeToggle } from "../ModeToggle";
 
 function SettingModal() {

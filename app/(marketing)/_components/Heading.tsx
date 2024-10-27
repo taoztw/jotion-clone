@@ -2,10 +2,9 @@
 import { Spinner } from "@/components/spinner";
 import { Button } from "@/components/ui/button";
 import { useConvexAuth } from "convex/react";
-import { ArrowRight, Divide } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { SignInButton } from "@clerk/clerk-react";
 import Link from "next/link";
-import { Sign } from "crypto";
 
 function Heading() {
   const { isLoading, isAuthenticated } = useConvexAuth();

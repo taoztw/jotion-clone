@@ -7,7 +7,6 @@ import { File } from "lucide-react";
 import { useSearch } from "@/hooks/use-search";
 import { api } from "@/convex/_generated/api";
 import {
-  Command,
   CommandDialog,
   CommandEmpty,
   CommandGroup,
@@ -15,7 +14,6 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-  CommandShortcut,
 } from "@/components/ui/command";
 
 function SearchCommand() {

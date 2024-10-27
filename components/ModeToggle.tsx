@@ -1,16 +1,10 @@
 "use client";
 
 import * as React from "react";
-import { icons, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
@@ -20,7 +14,7 @@ export function ModeToggle() {
   React.useEffect(() => {
     setIsClient(true);
   }, []);
-  const handleClick = (them: string | undefined) => {
+  const handleClick = (theme: string | undefined) => {
     if (theme === "light") {
       setTheme("dark");
     } else if (theme === "dark") {
